@@ -1,0 +1,98 @@
+/* Estructura GRID responsive de las tarjetas - CARRITO*/
+
+.purchaseCards--container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(880px, 1fr));
+	grid-gap: 1rem;
+	justify-items: center;
+	padding: 2rem;
+	width: max(660px, 80%);
+}
+
+.purchaseCard {
+	display: flex;
+	flex-direction: row;
+	color: #6f756b;
+	background-color: #fff7ef;
+	width: 660px;
+	height: 220px;
+	border-radius: 20px;
+	box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+	margin: 10px;
+	padding: 20px;
+	justify-content: space-between;
+	position: relative;
+}
+
+.purchaseCard-content {
+	border-radius: 10px;
+	width: 420px;
+	height: 180px;
+	padding: 10px;
+	text-align: left;
+}
+
+.purchaseCard__image {
+	width: 180px;
+	height: 180px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 10px;
+	background-position: center center;
+}
+
+.purchaseCard-content__title {
+	font-weight: 700;
+	text-decoration: none;
+	padding: 2px 0 2px 0;
+}
+
+.purchaseCard-content__category {
+	color: #f88a02;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 2px 0 2px 0;
+}
+
+.purchaseCard-content__body {
+	font-size: 0.8rem;
+	padding: 20px 0 20px 0;
+}
+
+.purchaseCard-content__priceQty {
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: right;
+}
+
+.purchaseCard--Total {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff7ef;
+	background-color: #6f756b;
+	width: 660px;
+	height: auto;
+	padding: 10px;
+	border-radius: 10px;
+	justify-content: flex-end;
+}
+
+.button-cart__topRight {
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff7ef;
+	background-color: rgb(133, 7, 7);
+	margin: 0px 4px 0px 4px;
+	padding: 0.2rem 1rem;
+	border-radius: 0.25rem;
+	transition: all 0.5s ease;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.button-cart__topRight:hover {
+	background-color: #fff7ef;
+	color: black;
+}

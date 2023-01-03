@@ -1,0 +1,36 @@
+.button-cart,
+.button-cart__purchase {
+	border: 1px solid #000000; /*anchura, estilo y color borde*/
+	padding: 10px; /*espacio alrededor texto*/
+	background-color: #000000; /*color botón*/
+	color: #ffffff; /*color texto*/
+	text-decoration: none; /*decoración texto*/
+	text-transform: uppercase; /*capitalización texto*/
+	font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+	border-radius: 50px; /*bordes redondos*/
+}
+
+.button-cart:hover,
+.button-cart__purchase:hover {
+	background-color: #fafa05;
+	border: 1px solid #fafa05;
+	color: black;
+}
+
+.button-emptycart,
+.button-emptycart__purchase {
+	border: 1px solid #ff0000; /*anchura, estilo y color borde*/
+	padding: 10px; /*espacio alrededor texto*/
+	background-color: #ff0000; /*color botón*/
+	color: #ffffff; /*color texto*/
+	text-decoration: none; /*decoración texto*/
+	text-transform: uppercase; /*capitalización texto*/
+	font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+	border-radius: 50px; /*bordes redondos*/
+}
+
+.button-emptycart:hover,
+.button-emptycart__purchase:hover {
+	background-color: #fff7ef;
+	color: rgb(133, 7, 7);
+}

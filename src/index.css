@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+
+/*ESTILOS GENERALES*/
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.image {
+	box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+	border-radius: 4px;
+}
+
+.display-1-intro {
+	color: #475681;
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-shadow: 2px 2px 4px #fff7ef;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.display-1--subtitle {
+	font-size: 2rem;
+	font-weight: 700;
+	text-shadow: 1px 1px 4px #fff7ef;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.display-1--description {
+	font-size: 1rem;
+	font-weight: 700;
+	text-shadow: 1px 1px 4px #fff7ef;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.row--main {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px;
+	row-gap: 10px;
+}
+
+.col--main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    padding: 5px;
+	padding: 5px;
 }

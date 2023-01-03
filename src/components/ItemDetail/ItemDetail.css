@@ -1,0 +1,75 @@
+/* Estructura GRID responsive de la tarjeta detalle */
+
+.cartCardDetail {
+	display: flex;
+	flex-direction: row;
+}
+
+.cartCardDetail-content {
+	border-radius: 10px;
+	width: 70%;
+	height: 100vh;
+	padding: 0px 10px 0px 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	margin-left: 10%;
+	margin-top: 5%;
+}
+
+.img-detail {
+	width: 440px;
+	height: 340px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 10px;
+	background-position: center center;
+}
+
+.title-detail {
+	font-weight: bold;
+	font-size: 1.5em;
+	text-decoration: none;
+	padding: 2px 0 2px 0;
+}
+
+.cartCardDetail-content__category {
+	color: #f88a02;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 2px 0 2px 0;
+}
+
+.details-detail {
+	font-size: 0.9rem;
+	padding: 20px 0 20px 0;
+	width: 50%;
+	margin-left: 24%;
+}
+
+.price-detail {
+	font-size: 1.5rem;
+	font-weight: 700;
+	padding: 5px 0 5px 0;
+	text-align: left;
+}
+
+.stock-detail{
+	font-size: 1rem;
+	font-weight: bold;	
+	text-align: left;
+	margin-left: -67%;
+}
+
+.cartCardDetail--Total {
+	color: #fff7ef;
+	background-color: #6f756b;
+	width: 660px;
+	height: auto;
+	padding: 10px;
+	justify-content: flex-end;
+}
+.count-detail{
+	text-align: left;
+}
+

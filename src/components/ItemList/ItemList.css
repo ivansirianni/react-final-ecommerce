@@ -1,0 +1,51 @@
+/* Estructura GRID responsive de las tarjetas - SERVICIOS*/
+
+.card{
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/048/054/199/large/mike-carnevale-razer-blade-15-runway-3840x2160.jpg?1649097297");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    border-radius: 20px;    
+	padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.card-img{
+    width: 250px;
+    height: 200px;    
+    border-radius: 20px;
+    margin-top: 5%;
+}
+.card-title{
+        color: white;
+}
+.card-text{    
+    color: white;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.card-cont{
+	padding: 1%;
+}
+.btn{
+    border: 1px solid #000000; /*anchura, estilo y color borde*/
+	padding: 10px; /*espacio alrededor texto*/
+	background-color: #000000; /*color botón*/
+	color: #ffffff; /*color texto*/
+	text-decoration: none; /*decoración texto*/
+	text-transform: uppercase; /*capitalización texto*/
+	font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+	border-radius: 50px; /*bordes redondos*/
+    margin-top: 3%;
+}
+.btn:hover{
+    background-color: #fafa05;
+	border: 1px solid #fafa05;
+	color: black;
+}
+
