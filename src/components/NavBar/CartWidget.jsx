@@ -5,7 +5,7 @@ import "./NavBar.css";
 
 export default function CartWidget(){
     const valueContext = useContext(cartContext)
-    const totalItemsInCart = valueContext.totalItemsInCartfn()
+    const { totalItemsInCart } = useContext(cartContext)
     const totalQtyInCart = valueContext.totalQtyInCartfn()
 
     return(

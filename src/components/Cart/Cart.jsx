@@ -14,13 +14,12 @@ export default function Cart(props) {
 	return (
 		<>
 			<div className="purchaseCard">
-				<Link to={urlItemDetail}>
-					<div className={`purchaseCard__image ${props.url}`}></div>
-				</Link>
+				
 				<div className="purchaseCard-content">
 				<Link className="nav__link" to={urlCategoryDetail}>
 					<span className="purchaseCard-content__category">{props.category}</span>
 				</Link>
+					<img src={props.img} className="img-cart" alt="img" />
 					<p className="purchaseCard-content__title">{props.name}</p>
 					<p className="purchaseCard-content__body">{props.details}</p>
 					<div className="purchaseCard-content__priceQty">
@@ -67,7 +66,7 @@ export function CartTotal() {
 				<div>
 					<div>
 						<span>
-							Total Compra ${totalValueInCart.toLocaleString()} -{" "}
+							Total Amount ${totalValueInCart.toLocaleString()} -{" "}
 							{totalQtyInCart.toLocaleString()} {unidOunids}
 						</span>
 					</div>

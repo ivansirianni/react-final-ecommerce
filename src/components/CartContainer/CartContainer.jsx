@@ -11,15 +11,13 @@ export default function CartContainer() {
 					<>
 						<Cart
 							key={item.id}
-							id={item.id}
-							articulo={item.articulo}
-							categoria={item.categoria}
-							imagen={item.imagen}
-							claseCSS={item.claseCSS}
-							title={item.title}
-							body={item.body}
-							precio={item.precio}
-							cantidad={item.cantidad}
+							id={item.id}							
+							category={item.category}
+							img={item.url}							
+							name={item.name}
+							detail={item.details}
+							price={item.price}
+							stock={item.stock}
 							cartQty={item.cartQty}
 						/>
 					</>
