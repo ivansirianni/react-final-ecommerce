@@ -1,4 +1,5 @@
 import React from "react";
+import CartIcon from "../assets/Icons/CartIcon.png"
 import { useContext } from "react";
 import { cartContext } from "../../storage/cartContext";
 import "./NavBar.css";
@@ -12,7 +13,7 @@ export default function CartWidget(){
         <>
              <div className="cart-container">   
                 <div className="cart-icon">
-                    <span className="nav-cart">🛒</span>
+                    <img src={ CartIcon } alt="cart" />
                 </div>
                 <div className="cart">
                     <span className="total-item">{totalItemsInCart}</span>

@@ -1,7 +1,7 @@
 .nav-logo{
     width: 80px;
     height: 80px;
-    margin-left: 10em;
+    margin-left: 12em;
 }
 .nav-container{
     display: flex;
@@ -37,10 +37,10 @@ ul{
 li{
     display: inline-block;
     padding: 1em;
-    width: 6em;    
+    width: 8em;    
 }
 li a{
-    color: rgb(242, 242, 4);
+    color: rgb(252, 252, 247);
     font-weight: bold;
     text-decoration: none;
     

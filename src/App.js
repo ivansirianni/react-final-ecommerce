@@ -28,12 +28,12 @@ function App() {
 								<Route path="/category/:categoryID"
 									element={
 										<>
-											<div className="col--main">
+											<div className="cat-items">
 												<h1>													
 													IvoDev Gaming Store													
 												</h1>
 												
-												<div className="cartCards--container">
+												<div className="cat-item">
 													<ItemListContainer />
 												</div>
 											</div>

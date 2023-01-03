@@ -11,25 +11,16 @@
 
 .purchaseCard {
 	display: flex;
-	flex-direction: row;
-	color: #6f756b;
+	flex-direction: row;	
 	background-color: #fff7ef;
-	width: 660px;
+	width: 700px;
 	height: 220px;
 	border-radius: 20px;
-	box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+	border: 1px solid black;
 	margin: 10px;
 	padding: 20px;
 	justify-content: space-between;
 	position: relative;
-}
-
-.purchaseCard-content {
-	border-radius: 10px;
-	width: 420px;
-	height: 180px;
-	padding: 10px;
-	text-align: left;
 }
 
 .purchaseCard__image {
@@ -65,12 +56,12 @@
 	text-align: right;
 }
 
-.purchaseCard--Total {
+.total-amount {
 	font-size: 1.5rem;
-	font-weight: 700;
+	font-weight: bold;
 	color: #fff7ef;
-	background-color: #6f756b;
-	width: 660px;
+	background-color: #000000;
+	width: 700px;
 	height: auto;
 	padding: 10px;
 	border-radius: 10px;
@@ -80,13 +71,15 @@
 .button-cart__topRight {
 	cursor: pointer;
 	display: inline-block;
-	text-decoration: none;
-	color: #fff7ef;
-	background-color: rgb(133, 7, 7);
-	margin: 0px 4px 0px 4px;
-	padding: 0.2rem 1rem;
-	border-radius: 0.25rem;
-	transition: all 0.5s ease;
+	border: 1px solid #ff0000; /*anchura, estilo y color borde*/
+	padding: 10px; /*espacio alrededor texto*/
+	background-color: #ff0000; /*color botón*/
+	color: #ffffff; /*color texto*/
+	text-decoration: none; /*decoración texto*/
+	text-transform: uppercase; /*capitalización texto*/
+	font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+	border-radius: 50px; /*bordes redondos*/
+
 	position: absolute;
 	top: 10px;
 	right: 10px;

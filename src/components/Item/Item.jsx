@@ -8,7 +8,7 @@ export default function Item(props) {
 
 		return (
 			<>
-				<div className="card body mt-3 bg-black border border-primary">
+				   <div className="card">
                     <div className ="my-3">
                     <img src={props.img} className="card-img" alt="item"/>
                     <h2 className="card-title text-white">{props.name} </h2> 

@@ -15,23 +15,19 @@ export default function Cart(props) {
 		<>
 			<div className="purchaseCard">
 				
-				<div className="purchaseCard-content">
-				<Link className="nav__link" to={urlCategoryDetail}>
-					<span className="purchaseCard-content__category">{props.category}</span>
-				</Link>
+				<div className="cartCard-content">					
 					<img src={props.img} className="img-cart" alt="img" />
-					<p className="purchaseCard-content__title">{props.name}</p>
-					<p className="purchaseCard-content__body">{props.details}</p>
+					<div className="info-cart">
+						<p className="purchaseCard-content__title">{props.name}</p>
+						<p className="purchaseCard-content__body">{props.details}</p>
+					</div>
 					<div className="purchaseCard-content__priceQty">
 						<span>
 							Total ${(props.price * props.cartQty).toLocaleString()} -{" "}
 							{props.cartQty.toLocaleString()} {unidOunids}
 						</span>
-						<Button
-							onButtonClick={() => removeItem(props.id)}
-							className="button-cart__topRight"
-						>
-							Remove 🗑
+						<Button	onButtonClick={() => removeItem(props.id)} className="button-cart__topRight">
+								Remove 🗑
 						</Button>
 					</div>
 				</div>
@@ -62,7 +58,7 @@ export function CartTotal() {
 
 	return (
 		<>
-			<div className="purchaseCard purchaseCard--Total">
+			<div className="total-amount">
 				<div>
 					<div>
 						<span>

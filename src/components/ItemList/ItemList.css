@@ -31,6 +31,8 @@
 }
 .card-cont{
 	padding: 1%;
+    display: flex;
+    flex-direction: row;
 }
 .btn{
     border: 1px solid #000000; /*anchura, estilo y color borde*/
@@ -47,5 +49,10 @@
     background-color: #fafa05;
 	border: 1px solid #fafa05;
 	color: black;
+}
+.cat-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
