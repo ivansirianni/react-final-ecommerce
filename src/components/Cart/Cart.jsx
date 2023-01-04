@@ -74,6 +74,9 @@ export function CartTotal() {
 							{totalQtyInCart.toLocaleString()} {unidOunids}
 						</span>
 						<ItemsEmpty	onEmptyCart={handleEmptyCart} />
+						<Link to="/checkout">
+							<button className="btn">Go to pay</button>
+						</Link>
 					</div>
 				</div>
 			</div>

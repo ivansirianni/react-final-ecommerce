@@ -11,6 +11,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import NavBar from "./components/NavBar/NavBar";
 import Home  from "./components/Pages/Home"
 import About from "./components/Pages/About"
+import Checkout from "./components/CheckOut/CheckOut";
 
 import CartContainer from "./components/CartContainer/CartContainer";
 import { CartTotal } from "./components/Cart/Cart";
@@ -45,6 +46,7 @@ function App() {
 												</div>																		
 									}
 								/>
+								<Route path='/checkout' element={<Checkout/>}></Route>
 								<Route path="*" element={<><h1>Error 404: Page Not Found.</h1></>}/>						
 							</Routes>					
 						</section>							

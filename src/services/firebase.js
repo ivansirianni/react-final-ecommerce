@@ -1,6 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {
+	addDoc,
+	updateDoc,
 	getFirestore,
 	doc,
 	getDoc,
@@ -26,6 +28,11 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
+
+const updateProd = async(id, info) => {
+    const estado = await updateDoc(doc(db, "productos",id), info)
+    return estado
+}
 
 export async function getSingleItem(id) {
 	const docRef = doc(db, "items", id);
@@ -65,3 +72,24 @@ export async function getItemsCategory(categoryID) {
 	});
 	return dataDocs;
 }
+
+//generar orden de compra
+const createOrder = async (cliente, totalPric, date) => {
+    const ordenCompra = await addDoc(collection(db, "ordenCompra"), {
+        name: cliente.name,
+        lastname: cliente.adress,
+        email: cliente.email,        
+        cell:cliente.cell, 
+		date: date,     
+        totalPrice: totalPric
+    })
+
+    return ordenCompra
+}
+
+const getOrder = async(id) => {
+    const item = await getDoc(doc(db, "ordenCompra", id))
+    const ordenCompra = {...item.data(), id: item.id}
+    return ordenCompra
+}
+export {createOrder, getOrder, updateProd}
