@@ -50,15 +50,14 @@
 .price-detail {
 	font-size: 1.5rem;
 	font-weight: 700;
-	padding: 5px 0 5px 0;
-	text-align: left;
+	padding: 5px 0 5px 0;	
 }
 
 .stock-detail{
 	font-size: 1rem;
 	font-weight: bold;	
 	text-align: left;
-	margin-left: -67%;
+	
 }
 
 .cartCardDetail--Total {
@@ -69,7 +68,9 @@
 	padding: 10px;
 	justify-content: flex-end;
 }
-.count-detail{
-	text-align: left;
-}
 
+
+.div2{
+	margin-right: 10%;
+	margin-top: 2%;
+}

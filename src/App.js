@@ -27,79 +27,41 @@ function App() {
 							<Routes>								
 								<Route path="/category/:categoryID"
 									element={
-										<>
-											<div className="cat-items">
-												<h1>													
-													IvoDev Gaming Store													
-												</h1>
-												
-												<div className="cat-item">
-													<ItemListContainer />
-												</div>
+										<>		
+											<div className="cat-item">
+												<ItemListContainer />
 											</div>
 										</>
 									}
 								/>
-								<Route	path="/item/:itemID" element={
-										<>
-											<div className="col--main">
-												<h1>
-													<div className="display-1-intro">
-														IvoDev Gaming Store
-													</div>
-												</h1>
-												<div className="display-1--subtitle">
-													Details
-												</div>
-												<div className="cartCardDetail--container">
-													<ItemDetailContainer />
-												</div>
-											</div>
-										</>
-									}
-								/>
+								<Route	path="/item/:itemID" element={<ItemDetailContainer />}/>							
 								<Route path="/"	element={ <Home />	} />							
 								<Route path="/about" element={ <About />	} />								
 								<Route path="/cart" element={
-										<>
-											<div className="col--main">
-												<h1>
-													<div className="display-1-intro">
-														IvoDev Gaming Store
-													</div>
-												</h1>
-												<div className="display-1--subtitle">
-													Cart
-												</div>
+																		
 												<div className="purchaseCards--container">
 													<CartTotal />
 													<CartContainer />
-												</div>
-											</div>
-										</>
+												</div>																		
 									}
 								/>
-								<Route
-									path="*"
-									element={
-										<>
-											<h1>
-												<div className="display-1-intro">
-													Error 404: Page Not Found.
-												</div>
-											</h1>
-										</>
-									}
-								/>
-							</Routes>
-						</section>
-						
-					</div>
+								<Route path="*" element={<><h1>Error 404: Page Not Found.</h1></>}/>						
+							</Routes>					
+						</section>							
+					</div>							
 				</BrowserRouter>
 			</CartContextProvider>
 		</>
 	);
-}
+}						
+										
+									
+								
+							
+						
+						
+					
+				
 
 export default App;
 

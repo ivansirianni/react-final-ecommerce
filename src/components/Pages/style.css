@@ -5,3 +5,75 @@
     justify-content: space-around;
    
 }
+.content{
+    width: 100%;
+    height: 70vh;
+    background-image: url("https://media.gettyimages.com/id/1211751671/video/loopable-colorful-neon-geometric-shapes-abstract-background-animation.jpg?s=640x640&k=20&c=pqo9Yn_tbDVLtWMX-vjakevLFiR-zF4smpHisW0dalw=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.title{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.content-img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.content-p{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 5%;
+}
+.about-link{
+    text-decoration: none;
+	font-weight: bold;
+	font-size: 0.9em;
+	color: rgb(247, 98, 5);
+}
+.about-link:hover{
+    transform: scale(1.2);
+	color: #4c02f8;
+    font-size: 1.2em;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+}
+.img-container{
+    width: 50%;
+}
+.content-about{
+    width: 50%;
+    margin-top: 5%;
+}
+.about-img{
+    width: 90%;
+    margin-top: 10%;
+    box-shadow: 2px 4px 6px rgb(8, 8, 8)
+}
+.title-about{
+    font-size: 3em;
+    color: #ee9d1a;
+    text-align: left;
+}
+.subtitle-about{
+    text-align: left;
+}
+.paragraph{
+    text-align: left;
+}
+.link-container{
+    margin-left: 60%;
+   margin-top: -9%;
+}

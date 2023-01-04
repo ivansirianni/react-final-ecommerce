@@ -37,7 +37,8 @@ ul{
 li{
     display: inline-block;
     padding: 1em;
-    width: 8em;    
+    width: 8em;  
+    position: relative;  
 }
 li a{
     color: rgb(252, 252, 247);
@@ -50,7 +51,7 @@ li a:hover{
     transform: scale(1.2);
      
 }
-li a::before {
+li ::before {
     display: block;
     content: '';
     width: 0%;
@@ -59,12 +60,12 @@ li a::before {
     top:0;
     position: absolute;
     transition: width 0.2s;
-    margin-top: 2em;
+    margin-top: 0.8em;
   
   }
   
-  li a:hover::before {
-    width: 6%;
+  li :hover::before {
+    width: 40%;
   }
   .cart-icon:hover{
     transform: scale(1.2);
@@ -74,6 +75,36 @@ li a::before {
     transform: scale(1.1);
   }
 
+  .icon-cart{
+    height: 30px;
+    width: 30px;
+  }
+  .dropdown-li {
+    position: relative;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .dropdown-li:hover .dropdown {
+    display: block;
+    opacity: 1;
+  }
+  
+  .dropdown {    
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    opacity: 0;
+    display: none;
+    background: rgb(5, 5, 5);
+  }
+  
+  .dropdown li {
+    list-style: none;
+  }
 
 /* nav ul{display:table;list-style: none;  }
 nav ul li{float:left; }

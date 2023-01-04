@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import "./Cart.css";
 import { cartContext } from "../../storage/cartContext";
+import ItemsEmpty from "../ItemCount/ItemsEmpty";
 
 export default function Cart(props) {
-	const { removeItem } = useContext(cartContext);
-
+	const { removeItem } = useContext(cartContext);	
 	let unidOunids = props.cartQty > 1 ? "Products" : "Product";
-	let urlItemDetail = `/item/${props.id}`;
-	let urlCategoryDetail = `/category/${props.category}`;
+	
+	
+	
 
 	return (
 		<>
@@ -30,17 +31,23 @@ export default function Cart(props) {
 								Remove 🗑
 						</Button>
 					</div>
+					
 				</div>
+				
 			</div>
+			
 		</>
 	);
 }
 
 export function CartTotal() {
 	const valueContext = useContext(cartContext);
-
 	const totalValueInCart = valueContext.totalValueInCartfn();
+	const { emptyCart } = useContext(cartContext);
 
+	function handleEmptyCart(cart) {
+		emptyCart(cart);
+	}
 	let totalQtyInCart = valueContext.totalQtyInCartfn();
 
 	let unidOunids = totalQtyInCart > 1 ? "Products" : "Product";
@@ -49,8 +56,9 @@ export function CartTotal() {
 		return (
 			<>
 				<div className="display-1--subtitle">Cart is Empty.</div>
-				<Link to="/" className="nav__link display-1--subtitle">
-					Go Back Home and Check Out Our Store
+				<iframe src="https://giphy.com/embed/jtECu4KjK3cqiAUMyR" width="480" height="398" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+				<Link to="/" className="cart-link">
+				 	➡ Go Back Home and Check Out Our Store ⬅
 				</Link>
 			</>
 		);
@@ -65,6 +73,7 @@ export function CartTotal() {
 							Total Amount ${totalValueInCart.toLocaleString()} -{" "}
 							{totalQtyInCart.toLocaleString()} {unidOunids}
 						</span>
+						<ItemsEmpty	onEmptyCart={handleEmptyCart} />
 					</div>
 				</div>
 			</div>

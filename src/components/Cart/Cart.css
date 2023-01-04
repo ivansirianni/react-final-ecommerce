@@ -93,3 +93,14 @@
 	width: 150px;
 	height: 100px;
 }
+
+.cart-link{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: black;
+}
+.cart-link:hover{
+	transform: scale(1.2);
+	color: #4c02f8;
+}
