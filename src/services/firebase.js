@@ -29,10 +29,7 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
 
-const updateProd = async(id, info) => {
-    const estado = await updateDoc(doc(db, "productos",id), info)
-    return estado
-}
+
 
 export async function getSingleItem(id) {
 	const docRef = doc(db, "items", id);
@@ -74,12 +71,12 @@ export async function getItemsCategory(categoryID) {
 }
 
 //generar orden de compra
-const createOrder = async (cliente, totalPric, date) => {
-    const ordenCompra = await addDoc(collection(db, "ordenCompra"), {
-        name: cliente.name,
-        lastname: cliente.adress,
-        email: cliente.email,        
-        cell:cliente.cell, 
+const createOrder = async (client, totalPric, date) => {
+    const ordenCompra = await addDoc(collection(db, "NewOrder"), {
+        name: client.name,
+        lastname: client.lastname,
+        email: client.email,        
+        cell:client.cell, 
 		date: date,     
         totalPrice: totalPric
     })
@@ -88,8 +85,14 @@ const createOrder = async (cliente, totalPric, date) => {
 }
 
 const getOrder = async(id) => {
-    const item = await getDoc(doc(db, "ordenCompra", id))
+    const item = await getDoc(doc(db, "newOrder", id))
     const ordenCompra = {...item.data(), id: item.id}
     return ordenCompra
 }
+
+const updateProd = async(id, info) => {
+    const estado = await updateDoc(doc(db, "productos",id), info)
+    return estado
+}
+
 export {createOrder, getOrder, updateProd}
